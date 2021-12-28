@@ -116,9 +116,9 @@ def plot_class_distributions(class_names, train_class_counts,
 
 # Get all training targets and count the number of class instances
 train_targets, train_class_counts = get_labels_and_class_counts(
-    train_dataset.train_labels)
+    train_dataset.targets) # now called targets
 test_targets, test_class_counts = get_labels_and_class_counts(
-    test_dataset.test_labels)
+    test_dataset.targets) # now called targets
 
 plot_class_distributions(class_names, train_class_counts, test_class_counts)
 
